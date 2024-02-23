@@ -1,0 +1,455 @@
+$richPurple: #24053e;
+$sweetGreen: #44ffa1;
+$neutral: #584d62;
+$cocaine: white;
+$ghostWhite: #fcf8ff;
+$headingFont: 'Fraunces 144pt S000';
+$bodyFont: "Manrope"; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        width: min(95%, 375.3px);
+        background-color: $ghostWhite;
+        
+    
+        .home {
+            background-color: $richPurple;
+            height: 481px;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 92.5%, 50% 100%, 0 92.5%);
+            color: $cocaine;
+            padding: 2rem .5rem;
+            text-align: center;
+
+            .logo-light {
+                float: left;
+            }
+
+            .bg-pattern1, .bg-pattern2{
+                display: none;
+            }
+
+            
+            .access-button {
+                float: right;
+                border: 0;
+                border-bottom: 2px solid $sweetGreen;
+                background-color: $richPurple;
+                color: $cocaine;
+                font-size: 1.125rem;
+                font-family: $bodyFont;
+            }
+
+            h1 {
+
+                font-family: $headingFont;
+                font-size: 3.25rem;
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+
+
+                .underline{
+                    text-decoration: underline;
+                    text-decoration-color: $sweetGreen;
+                }
+
+
+            }
+
+            .learn-more-button {
+                background-color: $sweetGreen;
+                width: 8.313rem;
+                height: 3.438rem;
+                border: none;
+                
+            }
+
+            
+        }
+
+        .hero {
+            position: relative;
+            width: 320px;
+            height: 184px;
+            top: -115px;
+            left: 48px;
+            
+        }
+
+        .pitch {
+
+            height: 700px;   
+            text-align: center;
+            background-color: $ghostWhite;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+            
+            .pitchOne {
+                margin-top: -4rem;
+            }
+
+            section {
+
+                padding: 1rem 1rem;
+                h2 {
+                    color: $richPurple;
+                    font-family: $headingFont;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: $neutral;
+                    font-family: $bodyFont;
+                    font-size: 1rem;
+                    font-weight: 200;
+                }
+            }
+
+            .numbers {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $richPurple;
+                width: 3rem;
+                height: 2.875rem;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+
+            
+
+
+        }
+
+        .test {
+            background-color: white;
+            margin-top: -2rem;
+            padding: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .bg-pattern3 {
+                display: none;
+            }
+
+            .founder {
+                height: 281px;
+                width: 281px;
+                
+            }
+
+            section {
+                margin-top: -3.5rem;
+                padding: 2.5rem 2rem;
+                background-color: $richPurple;
+                width: 343px;
+                height: 375px;
+                text-align: center;
+                color: $cocaine;
+
+                h3 {
+                    font-family: $headingFont;
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                p {
+                    font-family: $bodyFont;
+                    font-size: 1rem;
+                    font-weight: 100;
+                    margin-bottom: 1.5rem;
+                }
+
+                button {
+                    width: 175px;
+                    height: 55px;
+                    background-color: $sweetGreen;
+                    border: none;
+                    font-family: $bodyFont;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        
+    }
+
+    footer {
+
+        .dark-icon{
+            position: relative;
+            left: 1rem;
+
+        }
+        
+        .social_icons {
+            svg {
+                margin: 3rem .7rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px)   {
+        main  {
+            width: 768px;
+
+            .home {
+
+
+                h1 {
+                    font-size: 3.75rem;
+                    margin-top: 3.5rem;
+
+                }
+
+                .access-button{
+                    position: relative;
+                    right: 1.5rem;
+                }
+
+                .logo-light {
+                    position: relative;
+                    left: 1.5rem;
+                }
+
+                .bg-pattern1 {
+                    display: block;
+                    position: relative;
+                    bottom: 14rem;
+                    right: 11rem;
+                    width: 270.29px;
+                    height: 215.1px;
+                }
+
+                .bg-pattern2{
+                    display: block;
+                    width: 141.7px;
+                    height: 112.7;
+                    position: relative;
+                    bottom: 19rem;
+                    left: 43rem
+                }
+
+                .learn-more-button {
+                    margin-top: -1rem;
+                    font-size: 1rem;
+                }
+
+               
+            }
+
+            .hero {
+                width: 514px;
+                height: 296px;
+                position: relative;
+                top: -9rem;
+                left: 9.5rem;
+            }
+
+            .pitch {
+
+                height: 600px;
+                .pitchcontainer{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2.5rem 2rem;
+
+                    .numbers {
+                        margin-top: 0;
+                    }
+                    
+                    .pitch-para {
+                        text-align: left;
+                        width: 493px ;
+
+                        h2 {
+                            position: relative;
+                            top: -1.5rem;
+                        }
+                    }
+
+                    div {
+                        position: relative;
+                        right: 2.5rem;
+                    }
+
+                
+                }
+            }
+
+            .test {
+
+                
+
+
+                .founder {
+                    width: 265px;
+                    height: 267px;
+                    position: relative;
+                    right: 14.5rem;
+                }
+
+                section {
+                    text-align: left;
+                    width: 514px;
+                    padding: 3rem 4rem;
+                    position: relative;
+                    left: 3rem;
+                    bottom: 3.9rem;
+
+                    h3 {
+                        font-size: 3rem;
+                    }
+                }
+
+                .bg-pattern3{
+
+                    display: block;
+                    height: 200px;
+                    position: relative;
+                    bottom: 10rem;
+                    left: 13rem;
+
+                }
+            }
+
+
+        }
+
+        footer {
+            margin-top: -13rem;
+        }
+        
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        main {
+            width: 1440px;
+
+            .home {
+                height: 730px;
+
+                .access-button{
+                    position: relative;
+                    right: 9rem;
+                }
+
+                .logo-light {
+                    position: relative;
+                    left: 9rem;
+                }
+
+                h1 {
+                    font-size: 5rem;
+                }
+
+                .learn-more-button {
+                    width: 161px;
+                    height: 61px;
+                }
+
+                .bg-pattern1 {
+                    position: relative;
+                    top: -16rem;
+                }
+
+                .bg-pattern2 {
+                    position: relative;
+                    left: 83rem;
+                }
+
+            }
+            .hero {
+                width: 767px;
+                height: 441px;
+                position: relative;
+                top: -19rem;
+                left: 22rem;
+            }
+
+            .pitch {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: -14rem;
+                height: 500px;
+
+                .pitchcontainer {
+
+                    margin-top: -2rem;
+                    position: relative;
+                    left: 2rem;
+
+                    .pitch-para {
+                        width: 350px;
+                        text-align: center;
+                    }
+                }
+
+                .numbers {
+                    position: relative;
+                    top: -10rem;
+                    left: 8rem;
+                }
+            }
+
+            .test {
+                .founder {
+                    width: 477px;
+                    height: 477px;
+                    position: relative;
+                    top: 10rem;
+                    left: -22rem;
+                }
+
+                section {
+                    width: 730px;
+                    height: 474.74px;
+                    position: relative;
+                    left: 10rem;
+                    bottom: 5rem;
+                    
+                    h3 {
+                        margin-top: 4rem;
+                    }
+
+                    p {
+                        margin-top: 3rem;
+                    }
+
+                    button {
+                        margin-top: 1rem;
+                    }
+                }
+
+                .bg-pattern3{
+
+                    bottom: 15rem;
+                    left: 20rem;
+                    height: 230px;
+
+                }
+            }
+        }
+        
+    }
+}
+

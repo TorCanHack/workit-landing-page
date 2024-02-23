@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  width: min(95%, 375.3px);
+  background-color: #fcf8ff;
+}
+body main .home {
+  background-color: #24053e;
+  height: 481px;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92.5%, 50% 100%, 0 92.5%);
+          clip-path: polygon(0 0, 100% 0, 100% 92.5%, 50% 100%, 0 92.5%);
+  color: white;
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+body main .home .logo-light {
+  float: left;
+}
+body main .home .bg-pattern1, body main .home .bg-pattern2 {
+  display: none;
+}
+body main .home .access-button {
+  float: right;
+  border: 0;
+  border-bottom: 2px solid #44ffa1;
+  background-color: #24053e;
+  color: white;
+  font-size: 1.125rem;
+  font-family: "Manrope";
+}
+body main .home h1 {
+  font-family: "Fraunces 144pt S000";
+  font-size: 3.25rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+body main .home h1 .underline {
+  text-decoration: underline;
+  text-decoration-color: #44ffa1;
+}
+body main .home .learn-more-button {
+  background-color: #44ffa1;
+  width: 8.313rem;
+  height: 3.438rem;
+  border: none;
+}
+body main .hero {
+  position: relative;
+  width: 320px;
+  height: 184px;
+  top: -115px;
+  left: 48px;
+}
+body main .pitch {
+  height: 700px;
+  text-align: center;
+  background-color: #fcf8ff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+}
+body main .pitch .pitchOne {
+  margin-top: -4rem;
+}
+body main .pitch section {
+  padding: 1rem 1rem;
+}
+body main .pitch section h2 {
+  color: #24053e;
+  font-family: "Fraunces 144pt S000";
+  font-size: 2rem;
+  font-weight: 600;
+}
+body main .pitch section p {
+  color: #584d62;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 200;
+}
+body main .pitch .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #24053e;
+  width: 3rem;
+  height: 2.875rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+body main .test {
+  background-color: white;
+  margin-top: -2rem;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .test .bg-pattern3 {
+  display: none;
+}
+body main .test .founder {
+  height: 281px;
+  width: 281px;
+}
+body main .test section {
+  margin-top: -3.5rem;
+  padding: 2.5rem 2rem;
+  background-color: #24053e;
+  width: 343px;
+  height: 375px;
+  text-align: center;
+  color: white;
+}
+body main .test section h3 {
+  font-family: "Fraunces 144pt S000";
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+body main .test section p {
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+body main .test section button {
+  width: 175px;
+  height: 55px;
+  background-color: #44ffa1;
+  border: none;
+  font-family: "Manrope";
+  font-size: 1rem;
+}
+body footer .dark-icon {
+  position: relative;
+  left: 1rem;
+}
+body footer .social_icons svg {
+  margin: 3rem 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  body main {
+    width: 768px;
+  }
+  body main .home h1 {
+    font-size: 3.75rem;
+    margin-top: 3.5rem;
+  }
+  body main .home .access-button {
+    position: relative;
+    right: 1.5rem;
+  }
+  body main .home .logo-light {
+    position: relative;
+    left: 1.5rem;
+  }
+  body main .home .bg-pattern1 {
+    display: block;
+    position: relative;
+    bottom: 14rem;
+    right: 11rem;
+    width: 270.29px;
+    height: 215.1px;
+  }
+  body main .home .bg-pattern2 {
+    display: block;
+    width: 141.7px;
+    height: 112.7;
+    position: relative;
+    bottom: 19rem;
+    left: 43rem;
+  }
+  body main .home .learn-more-button {
+    margin-top: -1rem;
+    font-size: 1rem;
+  }
+  body main .hero {
+    width: 514px;
+    height: 296px;
+    position: relative;
+    top: -9rem;
+    left: 9.5rem;
+  }
+  body main .pitch {
+    height: 600px;
+  }
+  body main .pitch .pitchcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem;
+  }
+  body main .pitch .pitchcontainer .numbers {
+    margin-top: 0;
+  }
+  body main .pitch .pitchcontainer .pitch-para {
+    text-align: left;
+    width: 493px;
+  }
+  body main .pitch .pitchcontainer .pitch-para h2 {
+    position: relative;
+    top: -1.5rem;
+  }
+  body main .pitch .pitchcontainer div {
+    position: relative;
+    right: 2.5rem;
+  }
+  body main .test .founder {
+    width: 265px;
+    height: 267px;
+    position: relative;
+    right: 14.5rem;
+  }
+  body main .test section {
+    text-align: left;
+    width: 514px;
+    padding: 3rem 4rem;
+    position: relative;
+    left: 3rem;
+    bottom: 3.9rem;
+  }
+  body main .test section h3 {
+    font-size: 3rem;
+  }
+  body main .test .bg-pattern3 {
+    display: block;
+    height: 200px;
+    position: relative;
+    bottom: 10rem;
+    left: 13rem;
+  }
+  body footer {
+    margin-top: -13rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 1440px;
+  }
+  body main .home {
+    height: 730px;
+  }
+  body main .home .access-button {
+    position: relative;
+    right: 9rem;
+  }
+  body main .home .logo-light {
+    position: relative;
+    left: 9rem;
+  }
+  body main .home h1 {
+    font-size: 5rem;
+  }
+  body main .home .learn-more-button {
+    width: 161px;
+    height: 61px;
+  }
+  body main .home .bg-pattern1 {
+    position: relative;
+    top: -16rem;
+  }
+  body main .home .bg-pattern2 {
+    position: relative;
+    left: 83rem;
+  }
+  body main .hero {
+    width: 767px;
+    height: 441px;
+    position: relative;
+    top: -19rem;
+    left: 22rem;
+  }
+  body main .pitch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -14rem;
+    height: 500px;
+  }
+  body main .pitch .pitchcontainer {
+    margin-top: -2rem;
+    position: relative;
+    left: 2rem;
+  }
+  body main .pitch .pitchcontainer .pitch-para {
+    width: 350px;
+    text-align: center;
+  }
+  body main .pitch .numbers {
+    position: relative;
+    top: -10rem;
+    left: 8rem;
+  }
+  body main .test .founder {
+    width: 477px;
+    height: 477px;
+    position: relative;
+    top: 10rem;
+    left: -22rem;
+  }
+  body main .test section {
+    width: 730px;
+    height: 474.74px;
+    position: relative;
+    left: 10rem;
+    bottom: 5rem;
+  }
+  body main .test section h3 {
+    margin-top: 4rem;
+  }
+  body main .test section p {
+    margin-top: 3rem;
+  }
+  body main .test section button {
+    margin-top: 1rem;
+  }
+  body main .test .bg-pattern3 {
+    bottom: 15rem;
+    left: 20rem;
+    height: 230px;
+  }
+}/*# sourceMappingURL=styles.css.map */
